@@ -55,8 +55,9 @@ This system ensures the authenticity of certificates, preventing fraud through a
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/Aryan-20-5176/Certificate-Verification.git
+
+git clone: https://github.com/Aryan-20-5176/Certificate-Verification.git
+```
 cd "Certificate verification system"
 ```
 
