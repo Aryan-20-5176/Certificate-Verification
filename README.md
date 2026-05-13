@@ -79,7 +79,7 @@ EMAIL_PASSWORD=your_app_password
 ```
 - Start the backend:
 ```bash
-npm run dev
+npm start
 ```
 
 ### 3️⃣ Frontend Configuration
