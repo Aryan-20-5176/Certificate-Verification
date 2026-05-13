@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base styles */
+body {
+  @apply bg-slate-50 text-slate-800 dark:bg-[#0a0a0a] dark:text-neutral-200 antialiased transition-colors duration-300;
+  font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+}
+
+/* Components */
+.container-app {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+.page-wrapper {
+  @apply min-h-[calc(100vh-64px)] py-8;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.glass-card {
+  @apply bg-white/70 dark:bg-neutral-900/40 backdrop-blur-xl border border-slate-200/50 dark:border-white/5 shadow-2xl rounded-3xl;
+}
+
+.glass-input {
+  @apply w-full bg-neutral-800/50 border border-neutral-700/50 rounded-xl px-4 py-3 text-neutral-200 focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:border-teal-500/50 transition-all placeholder-neutral-500;
+}
+
+.btn-primary {
+  @apply px-6 py-3 rounded-xl font-semibold text-white bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 transition-all duration-300 shadow-lg active:scale-95 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 rounded-xl font-medium text-neutral-300 bg-neutral-800/50 border border-neutral-700/50 hover:bg-neutral-700/50 transition-all duration-300 flex items-center justify-center gap-2 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-danger {
+  @apply px-4 py-2 rounded-lg font-medium text-red-400 bg-red-400/10 border border-red-400/20 hover:bg-red-400/20 transition-all duration-300 flex items-center justify-center gap-2 active:scale-95;
+}
+
+/* Custom Scrollbar for a premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
